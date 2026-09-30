@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Generated output
+output/*
+!output/.gitkeep
+*.pdf
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+
+# Temporary / debug files
+work/
+debug/
+*.tmp
+
+# Editor / OS metadata
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
