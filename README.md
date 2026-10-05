@@ -115,6 +115,17 @@ python -m slide_extractor lecture.mp4 --diagnostics
 python -m slide_extractor lecture.mp4 --diagnostics output/scores.json
 ```
 
+
+## 사용 및 저작권
+
+이 도구는 **사용자가 직접 제공한 로컬 영상 파일**을 처리합니다. 사용자는 입력 영상과 생성 결과물을 처리·이용할 수 있는 적법한 권리 또는 허가를 가지고 있는지 스스로 확인해야 합니다.
+
+이 저장소는 강의 영상, 교수자의 슬라이드, 교안, LMS 내부 콘텐츠 등 제3자의 저작물을 포함하거나 배포하지 않습니다. 또한 특정 대학, LMS, 스트리밍 서비스의 접근 제어 또는 복제 방지 기능을 우회하는 기능을 포함하지 않습니다.
+
+권리자가 허용한 범위, 본인의 정당한 접근 권한, 그리고 적용되는 저작권·이용약관을 준수하는 범위에서 사용해 주세요.
+
+> This tool processes local video files provided by the user. Users are responsible for ensuring that they have the necessary rights or permission to process and use the input content. This repository does not include or distribute lecture videos, slides, course materials, or tools intended to bypass access controls or copy-protection mechanisms.
+
 ## 기본 detector
 
 기본값:
