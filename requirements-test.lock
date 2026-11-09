@@ -1,0 +1,8 @@
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+Pillow==12.3.0
+reportlab==5.0.1
+pypdf==6.19.0
+charset-normalizer==3.5.2
+setuptools==84.0.0
+pytest==9.2.0
