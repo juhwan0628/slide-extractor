@@ -1,0 +1,36 @@
+name: Publish verified CLI prerelease
+on:
+  push:
+    branches: ['publish/cli-*']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cli-prerelease-publication
+  cancel-in-progress: false
+jobs:
+  verify:
+    uses: ./.github/workflows/ci.yml
+  publish:
+    needs: verify
+    if: startsWith(github.ref, 'refs/heads/publish/cli-')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build and media tools
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          python -m pip install -c requirements-test.lock "setuptools>=77" "build>=1.2,<2" .
+      - name: Verify, build, smoke test and publish
+        run: python scripts/build_release.py --publish
