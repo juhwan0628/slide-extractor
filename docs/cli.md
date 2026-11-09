@@ -40,7 +40,16 @@ slide-extractor lecture.mp4 --json detailed
 
 FFmpeg/FFprobe가 PATH에 필요하다. qpdf는 선택적 PDF 압축이며 없어도 생성·검증이 가능하다. wheel에는 FFmpeg/FFprobe·qpdf·네이티브 도우미가 들어 있지 않다. 도우미가 없으면 H264도 CPU/all 정책으로 대체된다. 네이티브 도우미의 명시 경로는 SLIDE_NATIVE_KEYFRAME_HELPER 환경 변수로 지정할 수 있다. 일반 wheel CPU 성능과 도우미를 포함한 네이티브 GUI 성능을 동일하게 해석하지 않는다.
 
-PyPI·GitHub 공개 릴리스는 이 설치 작업과 별도다.
+공개 CLI 사전 릴리스는 https://github.com/juhwan0628/slide-extractor/releases/tag/v0.5.0b2 에서 받는다. PyPI 업로드는 수행하지 않았다. 아래 명령은 Python 3.12+ 가상환경에서 실행한다.
+
+```bash
+python -m pip install "https://github.com/juhwan0628/slide-extractor/releases/download/v0.5.0b2/slide_extractor-0.5.0b2-py3-none-any.whl"
+slide-extractor --version
+ffmpeg -version
+ffprobe -version
+```
+
+업데이트는 새 버전 wheel을 같은 방식으로 설치한다. 복구는 이전 검증 wheel을 새 가상환경에 설치한다. 이미 게시한 태그·파일은 교체하지 않는다.
 
 ## 여러 영상 순차 처리
 
