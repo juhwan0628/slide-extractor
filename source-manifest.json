@@ -2,7 +2,7 @@
   "export_tool_version": 2,
   "package_version": "0.5.0b2",
   "schema_version": 1,
-  "source_commit": "abb1afc44a91f88c5d70a76413172713bba037de",
+  "source_commit": "c8b3f2f43aa50287e48bd39df6f46ab03fb3f25c",
   "source_file_sha256": {
     "slide_cli/__init__.py": "12bbc7d6e591ca77d423f069a29a219a94e544efadfe70804e5fe94126fc1f2b",
     "slide_cli/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
@@ -42,6 +42,7 @@
   },
   "source_repository": "https://github.com/juhwan0628/slide-extractor-gui",
   "tracked_file_sha256": {
+    ".gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
     ".github/workflows/ci.yml": "fb1a1a76b9e1677a7c806daaf70ef6ada1b9a126ff2e251f7603a9ca547ef6f1",
     "CHANGELOG.md": "a7ae8c4c453fffd5b3d834819223d9f1cba6dd43adc4b31db0da5d0db22cc289",
     "LICENSE": "6bdfdc62e6b379687eae88b375b85eac374b385337336bffd7d2d8f81c72814b",
